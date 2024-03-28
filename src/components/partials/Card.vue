@@ -18,7 +18,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Prezzo: {{ price }}</li>
                 <li class="list-group-item">Recensioni: {{ rating.reviews }}</li>
-                <li class="list-group-item">Media Recensioni: {{ rating.average.toFixed(1) }}</li>
+                <li class="list-group-item">Media voti recensioni: {{ rating.average.toFixed(1) }}</li>
             </ul>
         </div>
         </div>

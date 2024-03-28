@@ -16,11 +16,13 @@
     methods:{
       getApi(){
         axios.get(this.store.apiUrl,{
-          params: store.queryParams
+          params: this.store.queryParams
         })
         .then(result => {
           this.store.cardsList = result.data
           console.log(this.store.cardsList);
+          this.store.nameList = result.data.map(item => item.name)
+          console.log(this.store.nameList);
         })
         .catch(error => {
           console.log(error);
@@ -34,7 +36,7 @@
 </script>
 
 <template>
-  <Header />
+  <Header @startSearch="getApi"/>
   <Main />
 </template>
 

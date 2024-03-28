@@ -5,7 +5,9 @@ export const store = reactive({
     mainTitle: 'Vite Beers',
     apiUrl: 'https://api.sampleapis.com/beers/ale',
     cardsList: [],
+    nameList: [],
     queryParams: {
+
 
     }
 })
