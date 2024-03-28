@@ -12,6 +12,13 @@
       return{
         store
       }
+    },
+    methods:{
+      getApi(){
+        axios.get(this.store.apiUrl,{
+          params: store.queryParams
+        })
+      }
     }
   }
 </script>
