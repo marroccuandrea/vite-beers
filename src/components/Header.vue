@@ -11,9 +11,7 @@
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <h1 class="text-center my-3 ">{{ store.mainTitle }}</h1>
 
 </template>
 

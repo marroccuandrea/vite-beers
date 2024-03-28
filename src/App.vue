@@ -18,15 +18,24 @@
         axios.get(this.store.apiUrl,{
           params: store.queryParams
         })
+        .then(result => {
+          this.store.cardsList = result.data
+          console.log(this.store.cardsList);
+        })
+        .catch(error => {
+          console.log(error);
+        })
       }
+    },
+    mounted(){
+      this.getApi()
     }
   }
 </script>
 
 <template>
-  <div>
-
-  </div>
+  <Header />
+  <Main />
 </template>
 
 <style lang="scss">
